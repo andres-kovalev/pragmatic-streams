@@ -1,0 +1,132 @@
+{
+    "name": "pragmatic-streams",
+    "version": "1.0.0",
+    "description": "Pragmatic operations on iterables",
+    "main": "dist/pragmatic-streams.js",
+    "module": "dist/pragmatic-streams.esm.js",
+    "umd:main": "dist/pragmatic-streams.umd.min.js",
+    "unpkg": "dist/pragmatic-streams.umd.min.js",
+    "jsdelivr": "dist/pragmatic-streams.umd.min.js",
+    "jsnext:main": "dist/pragmatic-streams.esm.js",
+    "react-native": "dist/pragmatic-streams.esm.js",
+    "source": "src/index.ts",
+    "types": "dist/index.d.ts",
+    "devDependencies": {
+        "@types/chai": "^4.2.9",
+        "@types/mocha": "^7.0.1",
+        "@types/sinon": "^7.5.2",
+        "@types/sinon-chai": "^3.2.3",
+        "@typescript-eslint/eslint-plugin": "^2.21.0",
+        "@typescript-eslint/parser": "^2.21.0",
+        "bili": "^4.8.1",
+        "chai": "^4.2.0",
+        "codecov": "^3.6.5",
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb": "^18.0.1",
+        "eslint-plugin-import": "^2.20.1",
+        "gitbook-cli": "^2.3.2",
+        "handlebars": "^4.7.3",
+        "husky": "^4.2.3",
+        "mocha": "^7.1.0",
+        "nyc": "^15.0.0",
+        "rollup-plugin-typescript2": "^0.26.0",
+        "sinon": "^9.0.0",
+        "sinon-chai": "^3.5.0",
+        "standard-version": "^7.1.0",
+        "ts-functionaltypes": "^1.0.6",
+        "ts-node": "^8.6.2",
+        "typedoc": "^0.16.11",
+        "typedoc-plugin-markdown": "^2.2.17",
+        "typescript": "^3.8.3"
+    },
+    "scripts": {
+        "lint": "eslint ./src ./tests ./tools --ext ts,js --cache --ignore-pattern .gitignore",
+        "lint:fix": "npm run lint -- --fix",
+        "test": "mocha \"tests/**/*.spec.ts\" -r ts-node/register -r ./tools/mocha.setup.ts --recursive",
+        "cover": "nyc --reporter=html --reporter=text npm test",
+        "cover:check": "npm run cover && nyc check-coverage --lines 70 --functions 70 --branches 70 --statements 70",
+        "codecov": "nyc report --reporter=text-lcov > coverage.lcov && codecov -t $CODECOV_TOKEN",
+        "precommit": "npm run lint",
+        "prepush": "npm run lint && npm run cover:check",
+        "build": "bili",
+        "prepare:readme": "bash ./tools/prepare-readme.sh",
+        "check:readme": "bash ./tools/check-readme.sh",
+        "build:docs": "gitbook build",
+        "publish:docs": "bash ./tools/publish-docs.sh . .temp",
+        "prepare:release": "standard-version -t ''",
+        "prepare:package": "node ./tools/clean.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/andres-kovalev/pragmatic-streams.git"
+    },
+    "keywords": [
+        "sync",
+        "stream",
+        "iterable",
+        "generator",
+        "pragmatic"
+    ],
+    "author": {
+        "name": "Andres Kovalev",
+        "email": "mail@akovalev.ru"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/andres-kovalev/pragmatic-streams/issues"
+    },
+    "homepage": "https://github.com/andres-kovalev/pragmatic-streams#readme",
+    "nyc": {
+        "include": [
+            "src/**/*.ts",
+            "src/**/*.js"
+        ],
+        "exclude": [
+            "src/**/*.spec.ts",
+            "src/**/*.spec.js"
+        ],
+        "all": true
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run precommit",
+            "pre-push": "npm run prepush"
+        }
+    },
+    "standard-version": {
+        "types": [
+            {
+                "type": "feat",
+                "section": "Features"
+            },
+            {
+                "type": "fix",
+                "section": "Bug Fixes"
+            },
+            {
+                "type": "chore",
+                "hidden": true
+            },
+            {
+                "type": "docs",
+                "hidden": true
+            },
+            {
+                "type": "style",
+                "hidden": true
+            },
+            {
+                "type": "refactor",
+                "section": "Improvements"
+            },
+            {
+                "type": "perf",
+                "section": "Improvements"
+            },
+            {
+                "type": "test",
+                "hidden": true
+            }
+        ]
+    }
+}
