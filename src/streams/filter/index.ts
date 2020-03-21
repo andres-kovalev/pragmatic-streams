@@ -1,12 +1,40 @@
 import curriedGenerator from './generator';
 
-type FilterFunction<T> = (item: T, index: number) => boolean;
+/**
+ * Filter predicate
+ */
+type FilterFunction<T> =
+/**
+ * @param item item to filter
+ * @param item item index in stream
+ * @returns defines whether item should stay or be filtered out
+ */
+(item: T, index: number) => boolean;
 
-type Filter<T> = (iterable: Iterable<T>) => IterableIterator<T>;
+/**
+ * Filter function (creates filtered stream)
+ */
+type Filter<T> =
+/**
+ * @param iterable input stream
+ * @returns output filtered stream
+ */
+(iterable: Iterable<T>) => IterableIterator<T>;
 
 /* eslint-disable import/export */
+/**
+ * Function to create filtered stream
+ * @param filterFn filter predicate
+ * @returns filter function
+ */
 export default function filter<T>(filterFn: FilterFunction<T>): Filter<T>;
 
+/**
+ * Function to create filtered stream
+ * @param filterFn filter predicate
+ * @param iterable input stream
+ * @returns output filtered stream
+ */
 export default function filter<T>(
     filterFn: FilterFunction<T>,
     iterable: Iterable<T>
