@@ -11,6 +11,9 @@
     "react-native": "dist/pragmatic-streams.esm.js",
     "source": "src/index.ts",
     "types": "dist/index.d.ts",
+    "engines": {
+        "node": ">= 6.2.0"
+    },
     "devDependencies": {
         "@types/chai": "^4.2.9",
         "@types/mocha": "^7.0.1",

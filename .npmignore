@@ -9,11 +9,12 @@ tools
 .editorconfig
 .eslintcache
 .eslintrc
-bili.config
+bili.config.ts
 book.json
 package-lock.json
 coverage.lcov
 .temp
 tsconfig.json
 webpack.config.js
-*.hbs
+.hbs
+templates
