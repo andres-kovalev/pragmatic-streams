@@ -67,6 +67,9 @@ jobs:
           name: publish-docs
           command: npm run publish:docs
       - run:
+          name: build-package
+          command: npm run build
+      - run:
           name: clean-up
           command: npm run prepare:package
       - run:
