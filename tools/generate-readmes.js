@@ -5,6 +5,7 @@ const { readFile, writeFile } = require('./common');
 
 const [ pattern ] = process.argv.slice(2);
 
+const parseLine = pipe(replaceFileName, replaceGitUrl);
 const app = new TypeDoc.Application();
 
 app.bootstrap({
@@ -49,9 +50,7 @@ function generateReadme(tsdoc, sourceFile) {
             `## ${ moduleName } module`,
             ...lines
                 .slice(index + 1)
-                .map(
-                    (line) => line.replace(/globals\.md/g, 'README.md')
-                )
+                .map(parseLine)
         ]
             .join('\n');
 
@@ -78,4 +77,20 @@ function getModuleName(file) {
 function removeSafe(path) {
     // eslint-disable-next-line no-unused-expressions
     fs.existsSync(path) && fs.unlinkSync(path);
+}
+
+function replaceFileName(line) {
+    return line.replace(/globals\.md/g, 'README.md');
+}
+
+function replaceGitUrl(line) {
+    if (!line.startsWith('*Defined in [')) {
+        return line;
+    }
+
+    return line.replace(/blob\/\w+\//, 'blob/master/');
+}
+
+function pipe(...functions) {
+    return functions.reduce((reduced, fn) => (...args) => fn(reduced(...args)));
 }
