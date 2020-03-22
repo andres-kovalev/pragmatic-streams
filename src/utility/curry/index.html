@@ -1,0 +1,534 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>curry · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../pipe/" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Table of Contents</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../streams/">
+            
+                <a href="../../streams/">
+            
+                    
+                    Streams
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../../streams/create/">
+            
+                <a href="../../streams/create/">
+            
+                    
+                    create
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../../streams/distinctUntilChanged/">
+            
+                <a href="../../streams/distinctUntilChanged/">
+            
+                    
+                    distinctUntilChanged
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../../streams/distinctUntilChangedShallow/">
+            
+                <a href="../../streams/distinctUntilChangedShallow/">
+            
+                    
+                    distinctUntilChangedShallow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../../streams/distinctUntilChangedStrict/">
+            
+                <a href="../../streams/distinctUntilChangedStrict/">
+            
+                    
+                    distinctUntilChangedStrict
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../../streams/filter/">
+            
+                <a href="../../streams/filter/">
+            
+                    
+                    filter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../../streams/last/">
+            
+                <a href="../../streams/last/">
+            
+                    
+                    last
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../../streams/map/">
+            
+                <a href="../../streams/map/">
+            
+                    
+                    map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../../streams/skip/">
+            
+                <a href="../../streams/skip/">
+            
+                    
+                    skip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.9" data-path="../../streams/take/">
+            
+                <a href="../../streams/take/">
+            
+                    
+                    take
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Utilities
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    curry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../pipe/">
+            
+                <a href="../pipe/">
+            
+                    
+                    pipe
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../../CHANGELOG.html">
+            
+                <a href="../../../CHANGELOG.html">
+            
+                    
+                    Change Log
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >curry</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="curry-module">curry module</h2>
+<h3 id="type-aliases">Type aliases</h3>
+<ul>
+<li><a href="./#args">Args</a></li>
+<li><a href="./#curried">Curried</a></li>
+<li><a href="./#curry">Curry</a></li>
+<li><a href="./#partialargs">PartialArgs</a></li>
+<li><a href="./#tail">Tail</a></li>
+<li><a href="./#tailarray">TailArray</a></li>
+</ul>
+<h3 id="functions">Functions</h3>
+<ul>
+<li><a href="./#const-curry">curry</a></li>
+</ul>
+<h2 id="type-aliases">Type aliases</h2>
+<h3 id="args">Args</h3>
+<p>&#x1AC; <strong>Args</strong>: <em>T extends function ? TArgs : never</em></p>
+<p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L11" target="_blank">index.ts:11</a></em></p>
+<hr>
+<h3 id="curried">Curried</h3>
+<p>&#x1AC; <strong>Curried</strong>: <em>function</em></p>
+<p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L19" target="_blank">index.ts:19</a></em></p>
+<h4 id="type-declaration">Type declaration:</h4>
+<p>&#x25B8; &lt;<strong>TArgs</strong>, <strong>TRest</strong>&gt;(...<code>args</code>: TArgs): <em>TRest extends [] ? TReturn : Curried<function></function></em></p>
+<p><strong>Type parameters:</strong></p>
+<p>&#x25AA; <strong>TArgs</strong>: <em><a href="./#partialargs">PartialArgs</a>&#x2039;T&#x203A;</em></p>
+<p>&#x25AA; <strong>TRest</strong>: <em><a href="./#tailarray">TailArray</a>&#x2039;<a href="./#args">Args</a>&#x2039;T&#x203A;, TArgs[&quot;length&quot;]&#x203A;</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>...args</code></td>
+<td>TArgs</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="curry">Curry</h3>
+<p>&#x1AC; <strong>Curry</strong>: <em>function</em></p>
+<p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L28" target="_blank">index.ts:28</a></em></p>
+<h4 id="type-declaration">Type declaration:</h4>
+<p>&#x25B8; &lt;<strong>TFunc</strong>&gt;(<code>fn</code>: TFunc, <code>arity?</code>: number): <em><a href="./#curried">Curried</a>&#x2039;TFunc&#x203A;</em></p>
+<p><strong>Type parameters:</strong></p>
+<p>&#x25AA; <strong>TFunc</strong>: <em>function</em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fn</code></td>
+<td>TFunc</td>
+<td></td>
+</tr>
+<tr>
+<td><code>arity?</code></td>
+<td>number</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="partialargs">PartialArgs</h3>
+<p>&#x1AC; <strong>PartialArgs</strong>: <em>T extends function ? Partial<targs> : never</targs></em></p>
+<p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L15" target="_blank">index.ts:15</a></em></p>
+<hr>
+<h3 id="tail">Tail</h3>
+<p>&#x1AC; <strong>Tail</strong>:</p>
+<p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L1" target="_blank">index.ts:1</a></em></p>
+<hr>
+<h3 id="tailarray">TailArray</h3>
+<p>&#x1AC; <strong>TailArray</strong>: <em><a href="./#tail">Tail</a>&#x2039;function, S&#x203A;</em></p>
+<p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L8" target="_blank">index.ts:8</a></em></p>
+<h2 id="functions">Functions</h2>
+<h3 id="const-curry"><code>Const</code> curry</h3>
+<p>&#x25B8; <strong>curry</strong>(<code>fn</code>: TFunc, <code>arity</code>: number): <em>(Anonymous function)</em></p>
+<p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L30" target="_blank">index.ts:30</a></em></p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fn</code></td>
+<td>TFunc</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr>
+<td><code>arity</code></td>
+<td>number</td>
+<td>fn.length</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Returns:</strong> <em>(Anonymous function)</em></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Utilities">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../pipe/" class="navigation navigation-next " aria-label="Next page: pipe">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"curry","level":"1.3.1","depth":2,"next":{"title":"pipe","level":"1.3.2","depth":2,"path":"src/utility/pipe/README.md","ref":"src/utility/pipe/README.md","articles":[]},"previous":{"title":"Utilities","level":"1.3","depth":1,"path":"src/utility/README.md","ref":"src/utility/README.md","articles":[{"title":"curry","level":"1.3.1","depth":2,"path":"src/utility/curry/README.md","ref":"src/utility/curry/README.md","articles":[]},{"title":"pipe","level":"1.3.2","depth":2,"path":"src/utility/pipe/README.md","ref":"src/utility/pipe/README.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing"],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/utility/curry/README.md","mtime":"2020-03-22T16:57:01.913Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-22T16:57:49.953Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
