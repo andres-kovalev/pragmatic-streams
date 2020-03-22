@@ -1,0 +1,11 @@
+export { default as create } from './streams/create';
+export { default as map } from './streams/map';
+export { default as filter } from './streams/filter';
+export { default as take } from './streams/take';
+export { default as skip } from './streams/skip';
+export { default as last } from './streams/last';
+export { default as distinctUntilChanged } from './streams/distinctUntilChanged';
+export { default as distinctUntilChangedStrict } from './streams/distinctUntilChangedStrict';
+export { default as distinctUntilChangedShallow } from './streams/distinctUntilChangedShallow';
+export { default as pipe } from './utility/pipe';
+export { default as curry } from './utility/curry';
