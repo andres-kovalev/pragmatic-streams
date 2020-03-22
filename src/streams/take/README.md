@@ -14,7 +14,7 @@
 
 Ƭ **Take**: *function*
 
-*Defined in [index.ts:6](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/take/index.ts#L6)*
+*Defined in [index.ts:6](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/take/index.ts#L6)*
 
 Take function (creates slice of a stream)
 
@@ -34,7 +34,7 @@ Name | Type | Description |
 
 ▸ **take**<**T**>(`amount`: number): *[Take](README.md#take)‹T›*
 
-*Defined in [index.ts:20](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/take/index.ts#L20)*
+*Defined in [index.ts:20](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/take/index.ts#L20)*
 
 Function to created slice of a stream (substream)
 takes first N items from input stream
@@ -55,7 +55,7 @@ take function to slice stream
 
 ▸ **take**<**T**>(`amount`: number, `iterable`: Iterable‹T›): *IterableIterator‹T›*
 
-*Defined in [index.ts:29](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/take/index.ts#L29)*
+*Defined in [index.ts:29](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/take/index.ts#L29)*
 
 Function to created slice of a stream (substream)
 takes first N items from input stream

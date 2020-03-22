@@ -15,7 +15,7 @@
 
 Ƭ **CreateFunction**: *function*
 
-*Defined in [index.ts:6](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/create/index.ts#L6)*
+*Defined in [index.ts:6](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/create/index.ts#L6)*
 
 Function to generate items using item index
 
@@ -35,7 +35,7 @@ ___
 
 Ƭ **Creator**: *function*
 
-*Defined in [index.ts:16](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/create/index.ts#L16)*
+*Defined in [index.ts:16](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/create/index.ts#L16)*
 
 Creator function (generates certain amount of items)
 
@@ -55,7 +55,7 @@ Name | Type | Description |
 
 ▸ **create**<**T**>(`createFn`: [CreateFunction](README.md#createfunction)‹T›): *[Creator](README.md#creator)‹T›*
 
-*Defined in [index.ts:29](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/create/index.ts#L29)*
+*Defined in [index.ts:29](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/create/index.ts#L29)*
 
 Function to create sync stream of items
 
@@ -75,7 +75,7 @@ creator function
 
 ▸ **create**<**T**>(`createFn`: [CreateFunction](README.md#createfunction)‹T›, `amount`: number): *IterableIterator‹T›*
 
-*Defined in [index.ts:37](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/create/index.ts#L37)*
+*Defined in [index.ts:37](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/create/index.ts#L37)*
 
 Function to create sync stream of items
 

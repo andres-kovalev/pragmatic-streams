@@ -15,7 +15,7 @@
 
 Ƭ **Map**: *function*
 
-*Defined in [index.ts:17](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/map/index.ts#L17)*
+*Defined in [index.ts:17](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/map/index.ts#L17)*
 
 Map function (creates transformed stream)
 
@@ -35,7 +35,7 @@ ___
 
 Ƭ **MapFunction**: *function*
 
-*Defined in [index.ts:6](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/map/index.ts#L6)*
+*Defined in [index.ts:6](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/map/index.ts#L6)*
 
 Function to transform item of a stream
 
@@ -56,7 +56,7 @@ Name | Type | Description |
 
 ▸ **map**<**S**, **D**>(`mapFn`: [MapFunction](README.md#mapfunction)‹S, D›): *[Map](README.md#map)‹S, D›*
 
-*Defined in [index.ts:30](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/map/index.ts#L30)*
+*Defined in [index.ts:30](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/map/index.ts#L30)*
 
 Function to create transformed stream
 
@@ -78,7 +78,7 @@ map function to transform stream
 
 ▸ **map**<**S**, **D**>(`mapFn`: [MapFunction](README.md#mapfunction)‹S, D›, `iterable`: Iterable‹S›): *IterableIterator‹D›*
 
-*Defined in [index.ts:38](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/map/index.ts#L38)*
+*Defined in [index.ts:38](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/map/index.ts#L38)*
 
 Function to create transformed stream
 

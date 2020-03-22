@@ -15,7 +15,7 @@
 
 Ƭ **Filter**: *function*
 
-*Defined in [index.ts:17](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/filter/index.ts#L17)*
+*Defined in [index.ts:17](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/filter/index.ts#L17)*
 
 Filter function (creates filtered stream)
 
@@ -35,7 +35,7 @@ ___
 
 Ƭ **FilterFunction**: *function*
 
-*Defined in [index.ts:6](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/filter/index.ts#L6)*
+*Defined in [index.ts:6](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/filter/index.ts#L6)*
 
 Filter predicate
 
@@ -56,7 +56,7 @@ Name | Type | Description |
 
 ▸ **filter**<**T**>(`filterFn`: [FilterFunction](README.md#filterfunction)‹T›): *[Filter](README.md#filter)‹T›*
 
-*Defined in [index.ts:30](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/filter/index.ts#L30)*
+*Defined in [index.ts:30](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/filter/index.ts#L30)*
 
 Function to create filtered stream
 
@@ -76,7 +76,7 @@ filter function
 
 ▸ **filter**<**T**>(`filterFn`: [FilterFunction](README.md#filterfunction)‹T›, `iterable`: Iterable‹T›): *IterableIterator‹T›*
 
-*Defined in [index.ts:38](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/filter/index.ts#L38)*
+*Defined in [index.ts:38](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/filter/index.ts#L38)*
 
 Function to create filtered stream
 
