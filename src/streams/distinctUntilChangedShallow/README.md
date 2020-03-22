@@ -10,7 +10,7 @@
 
 ▸ **distinctUntilChangedShallow**<**T**>(`iterable`: Iterable‹T›): *IterableIterator‹T›*
 
-*Defined in [index.ts:10](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/distinctUntilChangedShallow/index.ts#L10)*
+*Defined in [index.ts:10](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/distinctUntilChangedShallow/index.ts#L10)*
 
 Function to create new stream where items are distinct until changed
 uses shallow comparison to compare items

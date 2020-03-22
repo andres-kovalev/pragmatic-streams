@@ -19,7 +19,7 @@
 
 Ƭ **Args**: *T extends function ? TArgs : never*
 
-*Defined in [index.ts:11](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/utility/curry/index.ts#L11)*
+*Defined in [index.ts:11](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L11)*
 
 ___
 
@@ -27,7 +27,7 @@ ___
 
 Ƭ **Curried**: *function*
 
-*Defined in [index.ts:19](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/utility/curry/index.ts#L19)*
+*Defined in [index.ts:19](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L19)*
 
 #### Type declaration:
 
@@ -51,7 +51,7 @@ ___
 
 Ƭ **Curry**: *function*
 
-*Defined in [index.ts:28](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/utility/curry/index.ts#L28)*
+*Defined in [index.ts:28](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L28)*
 
 #### Type declaration:
 
@@ -74,7 +74,7 @@ ___
 
 Ƭ **PartialArgs**: *T extends function ? Partial<TArgs> : never*
 
-*Defined in [index.ts:15](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/utility/curry/index.ts#L15)*
+*Defined in [index.ts:15](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L15)*
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 Ƭ **Tail**:
 
-*Defined in [index.ts:1](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/utility/curry/index.ts#L1)*
+*Defined in [index.ts:1](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L1)*
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 Ƭ **TailArray**: *[Tail](README.md#tail)‹function, S›*
 
-*Defined in [index.ts:8](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/utility/curry/index.ts#L8)*
+*Defined in [index.ts:8](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L8)*
 
 ## Functions
 
@@ -98,7 +98,7 @@ ___
 
 ▸ **curry**(`fn`: TFunc, `arity`: number): *(Anonymous function)*
 
-*Defined in [index.ts:30](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/utility/curry/index.ts#L30)*
+*Defined in [index.ts:30](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L30)*
 
 **Parameters:**
 

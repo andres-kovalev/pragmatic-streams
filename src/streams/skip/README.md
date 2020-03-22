@@ -14,7 +14,7 @@
 
 Ƭ **Skip**: *function*
 
-*Defined in [index.ts:6](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/skip/index.ts#L6)*
+*Defined in [index.ts:6](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/skip/index.ts#L6)*
 
 Skip function (creates slice of a stream)
 
@@ -34,7 +34,7 @@ Name | Type | Description |
 
 ▸ **skip**<**T**>(`amount`: number): *[Skip](README.md#skip)‹T›*
 
-*Defined in [index.ts:20](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/skip/index.ts#L20)*
+*Defined in [index.ts:20](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/skip/index.ts#L20)*
 
 Function to created slice of a stream (substream)
 skips first N items from input stream and returns the rest
@@ -55,7 +55,7 @@ skip function to slice stream
 
 ▸ **skip**<**T**>(`amount`: number, `iterable`: Iterable‹T›): *IterableIterator‹T›*
 
-*Defined in [index.ts:29](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/streams/skip/index.ts#L29)*
+*Defined in [index.ts:29](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/skip/index.ts#L29)*
 
 Function to created slice of a stream (substream)
 skips first N items from input stream and returns the rest

@@ -10,7 +10,7 @@
 
 ▸ **pipe**(...`functions`: object): *(Anonymous function)*
 
-*Defined in [index.ts:1](https://github.com/andres-kovalev/pragmatic-streams/blob/08c08d4/src/utility/pipe/index.ts#L1)*
+*Defined in [index.ts:1](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/pipe/index.ts#L1)*
 
 **Parameters:**
 
