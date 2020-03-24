@@ -12,6 +12,7 @@
 Set of pragmatic operations on iterables.
 
 * full documentation can be found on [https://andres-kovalev.github.io/pragmatic-streams/](https://andres-kovalev.github.io/pragmatic-streams/)
+* few demo examples can be found in [playground](https://repl.it/@andreskovalev/pragmatic-streams-playground)
 
 # Description
 
