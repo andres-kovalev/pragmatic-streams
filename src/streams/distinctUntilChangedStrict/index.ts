@@ -1,6 +1,7 @@
 import generator from './generator';
 
 /**
+ * @deprecated Use distinct() instead.
  * Function to create new stream where items are distinct until changed
  * uses strict comparison (===) to compare items
  * @param iterable input stream

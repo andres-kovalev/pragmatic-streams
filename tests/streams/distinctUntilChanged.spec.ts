@@ -32,14 +32,20 @@ describe('distinctUntilChanged', () => {
         const equalityFunction = spy(strictEqual);
 
         const iterable = distinctUntilChanged(equalityFunction, numberSource);
+        const iterator = iterable[Symbol.iterator]();
 
         // eslint-disable-next-line no-unused-expressions
         expect(equalityFunction).to.not.have.been.called;
 
-        iterable[Symbol.iterator]().next();
+        iterator.next();
 
         // eslint-disable-next-line no-unused-expressions
-        expect(equalityFunction).to.have.been.calledOnce;
+        expect(equalityFunction).to.not.have.been.called;
+
+        iterator.next();
+
+        // eslint-disable-next-line no-unused-expressions
+        expect(equalityFunction).to.have.been.calledTwice;
     });
 
     it('should support partial application', () => {

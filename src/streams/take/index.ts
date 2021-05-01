@@ -1,4 +1,4 @@
-import curriedGenerator from './generator';
+import curriedGenerator, { CurriedGenerator } from './generator';
 
 /**
  * Take function (creates slice of a stream)
@@ -28,7 +28,9 @@ export default function take<T>(amount: number): Take<T>;
  */
 export default function take<T>(amount: number, iterable: Iterable<T>): IterableIterator<T>;
 
-export default function take<T>(...args: any[]): Take<T> | IterableIterator<T> {
-    return curriedGenerator(...args);
+export default function take<T>(
+    ...args: [ number ] | [ number, Iterable<T> ]
+): Take<T> | IterableIterator<T> {
+    return (<CurriedGenerator<T>>curriedGenerator)(...args);
 }
 /* eslint-enable import/export */

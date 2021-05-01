@@ -1,4 +1,4 @@
-import curriedGenerator from './generator';
+import curriedGenerator, { CurriedGenerator } from './generator';
 
 /**
  * Compare function (compares two items)
@@ -43,8 +43,8 @@ export default function distinctUntilChanged<T>(
 ): IterableIterator<T>;
 
 export default function distinctUntilChanged<T>(
-    ...args: any[]
+    ...args: [ CompareFunction<T> ] | [ CompareFunction<T>, Iterable<T> ]
 ): DistinctUntilChanged<T> | IterableIterator<T> {
-    return curriedGenerator(...args);
+    return (<CurriedGenerator<T>>curriedGenerator)(...args);
 }
 /* eslint-enable import/export */

@@ -1,4 +1,4 @@
-import curriedGenerator from './generator';
+import curriedGenerator, { CurriedGenerator } from './generator';
 
 /**
  * Function to generate items using item index
@@ -36,7 +36,9 @@ export default function create<T>(createFn: CreateFunction<T>): Creator<T>;
  */
 export default function create<T>(createFn: CreateFunction<T>, amount: number): IterableIterator<T>;
 
-export default function create<T>(...args: any[]): Creator<T> | IterableIterator<T> {
-    return curriedGenerator(...args);
+export default function create<T>(
+    ...args: [CreateFunction<T>] | [CreateFunction<T>, number]
+): Creator<T> | IterableIterator<T> {
+    return (<CurriedGenerator<T>>curriedGenerator)(...args);
 }
 /* eslint-enable import/export */
