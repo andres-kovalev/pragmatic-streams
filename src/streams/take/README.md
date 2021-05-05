@@ -32,7 +32,7 @@ Name | Type | Description |
 
 ###  take
 
-▸ **take**<**T**>(`amount`: number): *[Take](README.md#take)‹T›*
+▸ **take**‹**T**›(`amount`: number): *[Take](README.md#take)‹T›*
 
 *Defined in [index.ts:20](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/take/index.ts#L20)*
 
@@ -53,7 +53,7 @@ Name | Type | Description |
 
 take function to slice stream
 
-▸ **take**<**T**>(`amount`: number, `iterable`: Iterable‹T›): *IterableIterator‹T›*
+▸ **take**‹**T**›(`amount`: number, `iterable`: Iterable‹T›): *IterableIterator‹T›*
 
 *Defined in [index.ts:29](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/take/index.ts#L29)*
 

@@ -53,7 +53,7 @@ Name | Type | Description |
 
 ###  create
 
-▸ **create**<**T**>(`createFn`: [CreateFunction](README.md#createfunction)‹T›): *[Creator](README.md#creator)‹T›*
+▸ **create**‹**T**›(`createFn`: [CreateFunction](README.md#createfunction)‹T›): *[Creator](README.md#creator)‹T›*
 
 *Defined in [index.ts:29](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/create/index.ts#L29)*
 
@@ -73,7 +73,7 @@ Name | Type | Description |
 
 creator function
 
-▸ **create**<**T**>(`createFn`: [CreateFunction](README.md#createfunction)‹T›, `amount`: number): *IterableIterator‹T›*
+▸ **create**‹**T**›(`createFn`: [CreateFunction](README.md#createfunction)‹T›, `amount`: number): *IterableIterator‹T›*
 
 *Defined in [index.ts:37](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/create/index.ts#L37)*
 

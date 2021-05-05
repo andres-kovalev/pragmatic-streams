@@ -32,7 +32,7 @@ Name | Type | Description |
 
 ###  skip
 
-▸ **skip**<**T**>(`amount`: number): *[Skip](README.md#skip)‹T›*
+▸ **skip**‹**T**›(`amount`: number): *[Skip](README.md#skip)‹T›*
 
 *Defined in [index.ts:20](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/skip/index.ts#L20)*
 
@@ -53,7 +53,7 @@ Name | Type | Description |
 
 skip function to slice stream
 
-▸ **skip**<**T**>(`amount`: number, `iterable`: Iterable‹T›): *IterableIterator‹T›*
+▸ **skip**‹**T**›(`amount`: number, `iterable`: Iterable‹T›): *IterableIterator‹T›*
 
 *Defined in [index.ts:29](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/skip/index.ts#L29)*
 

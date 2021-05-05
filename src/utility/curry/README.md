@@ -31,7 +31,7 @@ ___
 
 #### Type declaration:
 
-▸ <**TArgs**, **TRest**>(...`args`: TArgs): *TRest extends [] ? TReturn : Curried<function>*
+▸ ‹**TArgs**, **TRest**›(...`args`: TArgs): *TRest extends [] ? TReturn : Curried‹function›*
 
 **Type parameters:**
 
@@ -55,7 +55,7 @@ ___
 
 #### Type declaration:
 
-▸ <**TFunc**>(`fn`: TFunc, `arity?`: number): *[Curried](README.md#curried)‹TFunc›*
+▸ ‹**TFunc**›(`fn`: TFunc, `arity?`: number): *[Curried](README.md#curried)‹TFunc›*
 
 **Type parameters:**
 
@@ -72,7 +72,7 @@ ___
 
 ###  PartialArgs
 
-Ƭ **PartialArgs**: *T extends function ? Partial<TArgs> : never*
+Ƭ **PartialArgs**: *T extends function ? Partial‹TArgs› : never*
 
 *Defined in [index.ts:15](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/utility/curry/index.ts#L15)*
 

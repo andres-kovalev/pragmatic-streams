@@ -54,7 +54,7 @@ Name | Type | Description |
 
 ###  distinctUntilChanged
 
-▸ **distinctUntilChanged**<**T**>(`compareFn`: [CompareFunction](README.md#comparefunction)‹T›): *[DistinctUntilChanged](README.md#distinctuntilchanged)‹T›*
+▸ **distinctUntilChanged**‹**T**›(`compareFn`: [CompareFunction](README.md#comparefunction)‹T›): *[DistinctUntilChanged](README.md#distinctuntilchanged)‹T›*
 
 *Defined in [index.ts:30](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/distinctUntilChanged/index.ts#L30)*
 
@@ -74,7 +74,7 @@ Name | Type | Description |
 
 distinct function to transform stream
 
-▸ **distinctUntilChanged**<**T**>(`compareFn`: [CompareFunction](README.md#comparefunction)‹T›, `iterable`: Iterable‹T›): *IterableIterator‹T›*
+▸ **distinctUntilChanged**‹**T**›(`compareFn`: [CompareFunction](README.md#comparefunction)‹T›, `iterable`: Iterable‹T›): *IterableIterator‹T›*
 
 *Defined in [index.ts:40](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/distinctUntilChanged/index.ts#L40)*
 

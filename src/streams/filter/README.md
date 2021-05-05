@@ -47,14 +47,14 @@ Filter predicate
 
 Name | Type | Description |
 ------ | ------ | ------ |
-`item` | T | item index in stream |
-`index` | number | - |
+`item` | T | item to filter |
+`index` | number | item index in stream |
 
 ## Functions
 
 ###  filter
 
-▸ **filter**<**T**>(`filterFn`: [FilterFunction](README.md#filterfunction)‹T›): *[Filter](README.md#filter)‹T›*
+▸ **filter**‹**T**›(`filterFn`: [FilterFunction](README.md#filterfunction)‹T›): *[Filter](README.md#filter)‹T›*
 
 *Defined in [index.ts:30](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/filter/index.ts#L30)*
 
@@ -74,7 +74,7 @@ Name | Type | Description |
 
 filter function
 
-▸ **filter**<**T**>(`filterFn`: [FilterFunction](README.md#filterfunction)‹T›, `iterable`: Iterable‹T›): *IterableIterator‹T›*
+▸ **filter**‹**T**›(`filterFn`: [FilterFunction](README.md#filterfunction)‹T›, `iterable`: Iterable‹T›): *IterableIterator‹T›*
 
 *Defined in [index.ts:38](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/filter/index.ts#L38)*
 

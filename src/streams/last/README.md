@@ -32,11 +32,11 @@ Name | Type | Description |
 
 ###  last
 
-▸ **last**<**T**>(`amount`: number): *[Last](README.md#last)‹T›*
+▸ **last**‹**T**›(`amount`: number): *[Last](README.md#last)‹T›*
 
 *Defined in [index.ts:20](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/last/index.ts#L20)*
 
-Function to created slice of a stream (substream)
+Function to create slice of a stream (substream)
 takes last N items from input stream
 
 **Type parameters:**
@@ -53,7 +53,7 @@ Name | Type | Description |
 
 last function to slice stream
 
-▸ **last**<**T**>(`amount`: number, `iterable`: Iterable‹T›): *IterableIterator‹T›*
+▸ **last**‹**T**›(`amount`: number, `iterable`: Iterable‹T›): *IterableIterator‹T›*
 
 *Defined in [index.ts:29](https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/last/index.ts#L29)*
 
