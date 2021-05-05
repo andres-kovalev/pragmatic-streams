@@ -1,4 +1,4 @@
-import curriedGenerator from './generator';
+import curriedGenerator, { CurriedGenerator } from './generator';
 
 /**
  * Last function (creates slice of a stream)
@@ -12,7 +12,7 @@ type Last<T> =
 
 /* eslint-disable import/export */
 /**
- * Function to created slice of a stream (substream)
+ * Function to create slice of a stream (substream)
  * takes last N items from input stream
  * @param amount number of items to take
  * @return last function to slice stream
@@ -28,7 +28,9 @@ export default function last<T>(amount: number): Last<T>;
  */
 export default function last<T>(amount: number, iterable: Iterable<T>): IterableIterator<T>;
 
-export default function last<T>(...args: any[]): Last<T> | IterableIterator<T> {
-    return curriedGenerator(...args);
+export default function last<T>(
+    ...args: [ number ] | [ number, Iterable<T> ]
+): Last<T> | IterableIterator<T> {
+    return (<CurriedGenerator<T>>curriedGenerator)(...args);
 }
 /* eslint-enable import/export */

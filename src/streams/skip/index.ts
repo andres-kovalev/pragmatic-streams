@@ -1,4 +1,4 @@
-import curriedGenerator from './generator';
+import curriedGenerator, { CurriedGenerator } from './generator';
 
 /**
  * Skip function (creates slice of a stream)
@@ -28,7 +28,9 @@ export default function skip<T>(amount: number): Skip<T>;
  */
 export default function skip<T>(amount: number, iterable: Iterable<T>): IterableIterator<T>;
 
-export default function skip<T>(...args: any[]): Skip<T> | IterableIterator<T> {
-    return curriedGenerator(...args);
+export default function skip<T>(
+    ...args: [ number ] | [ number, Iterable<T> ]
+): Skip<T> | IterableIterator<T> {
+    return (<CurriedGenerator<T>>curriedGenerator)(...args);
 }
 /* eslint-enable import/export */

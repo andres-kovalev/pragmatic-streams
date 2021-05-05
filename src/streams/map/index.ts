@@ -1,4 +1,4 @@
-import curriedGenerator from './generator';
+import curriedGenerator, { CurriedGenerator } from './generator';
 
 /**
  * Function to transform item of a stream
@@ -40,7 +40,9 @@ export default function map<S, D>(
     iterable: Iterable<S>
 ): IterableIterator<D>;
 
-export default function map<S, D>(...args: any[]): Map<S, D> | IterableIterator<D> {
-    return curriedGenerator(...args);
+export default function map<S, D>(
+    ...args: [ MapFunction<S, D> ] | [ MapFunction<S, D>, Iterable<S> ]
+): Map<S, D> | IterableIterator<D> {
+    return (<CurriedGenerator<S, D>>curriedGenerator)(...args);
 }
 /* eslint-enable import/export */

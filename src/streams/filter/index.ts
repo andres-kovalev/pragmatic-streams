@@ -1,4 +1,4 @@
-import curriedGenerator from './generator';
+import curriedGenerator, { CurriedGenerator } from './generator';
 
 /**
  * Filter predicate
@@ -6,7 +6,7 @@ import curriedGenerator from './generator';
 type FilterFunction<T> =
 /**
  * @param item item to filter
- * @param item item index in stream
+ * @param index item index in stream
  * @returns defines whether item should stay or be filtered out
  */
 (item: T, index: number) => boolean;
@@ -40,7 +40,9 @@ export default function filter<T>(
     iterable: Iterable<T>
 ): IterableIterator<T>;
 
-export default function filter<T>(...args: any): Filter<T> | IterableIterator<T> {
-    return curriedGenerator(...args);
+export default function filter<T>(
+    ...args: [ FilterFunction<T> ] | [ FilterFunction<T>, Iterable<T> ]
+): Filter<T> | IterableIterator<T> {
+    return (<CurriedGenerator<T>>curriedGenerator)(...args);
 }
 /* eslint-enable import/export */
