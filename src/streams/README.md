@@ -3,6 +3,7 @@
 Here are some functions to manipulate streams:
 
 * [create](./create/README.md)
+* [distinct](./distinct/README.md)
 * [distinctUntilChanged](./distinctUntilChanged/README.md)
 * [distinctUntilChangedShallow](./distinctUntilChangedShallow/README.md)
 * [distinctUntilChangedStrict](./distinctUntilChangedStrict/README.md)
@@ -11,4 +12,5 @@ Here are some functions to manipulate streams:
 * [map](./map/README.md)
 * [skip](./skip/README.md)
 * [take](./take/README.md)
+* [takeWhile](./takeWhile/README.md)
 

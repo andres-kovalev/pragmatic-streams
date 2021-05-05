@@ -33,6 +33,7 @@ npm i -S pragmatic-streams
 There are several stream operators provided by this package:
 
 * [create](src/streams/create/README.md)
+* [distinct](src/streams/distinct/README.md)
 * [distinctUntilChanged](src/streams/distinctUntilChanged/README.md)
 * [distinctUntilChangedShallow](src/streams/distinctUntilChangedShallow/README.md)
 * [distinctUntilChangedStrict](src/streams/distinctUntilChangedStrict/README.md)
@@ -41,6 +42,7 @@ There are several stream operators provided by this package:
 * [map](src/streams/map/README.md)
 * [skip](src/streams/skip/README.md)
 * [take](src/streams/take/README.md)
+* [takeWhile](src/streams/takeWhile/README.md)
 
 Most stream operators consumes at least 1 argument - iterable value. For instance, `filter` operator lets us to filter out some values, when `map` operator transforms each item of input iterable. Both returns new iterable:
 
