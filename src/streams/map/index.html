@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../skip/" />
+    <link rel="next" href="../reduce/" />
     
     
     <link rel="prev" href="../last/" />
@@ -131,7 +131,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../distinctUntilChanged/">
+        <li class="chapter " data-level="1.2.2" data-path="../distinct/">
+            
+                <a href="../distinct/">
+            
+                    
+                    distinct
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../distinctUntilChanged/">
             
                 <a href="../distinctUntilChanged/">
             
@@ -144,7 +157,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../distinctUntilChangedShallow/">
+        <li class="chapter " data-level="1.2.4" data-path="../distinctUntilChangedShallow/">
             
                 <a href="../distinctUntilChangedShallow/">
             
@@ -157,7 +170,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../distinctUntilChangedStrict/">
+        <li class="chapter " data-level="1.2.5" data-path="../distinctUntilChangedStrict/">
             
                 <a href="../distinctUntilChangedStrict/">
             
@@ -170,7 +183,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="../filter/">
+        <li class="chapter " data-level="1.2.6" data-path="../every/">
+            
+                <a href="../every/">
+            
+                    
+                    every
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../filter/">
             
                 <a href="../filter/">
             
@@ -183,7 +209,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6" data-path="../last/">
+        <li class="chapter " data-level="1.2.8" data-path="../last/">
             
                 <a href="../last/">
             
@@ -196,7 +222,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.7" data-path="./">
+        <li class="chapter active" data-level="1.2.9" data-path="./">
             
                 <a href="./">
             
@@ -209,7 +235,59 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.8" data-path="../skip/">
+        <li class="chapter " data-level="1.2.10" data-path="../reduce/">
+            
+                <a href="../reduce/">
+            
+                    
+                    reduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../reduceWith/">
+            
+                <a href="../reduceWith/">
+            
+                    
+                    reduceWith
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../scan/">
+            
+                <a href="../scan/">
+            
+                    
+                    scan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../scanWith/">
+            
+                <a href="../scanWith/">
+            
+                    
+                    scanWith
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../skip/">
             
                 <a href="../skip/">
             
@@ -222,12 +300,38 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.9" data-path="../take/">
+        <li class="chapter " data-level="1.2.15" data-path="../some/">
+            
+                <a href="../some/">
+            
+                    
+                    some
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../take/">
             
                 <a href="../take/">
             
                     
                     take
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../takeWhile/">
+            
+                <a href="../takeWhile/">
+            
+                    
+                    takeWhile
             
                 </a>
             
@@ -411,7 +515,7 @@
 </table>
 <h2 id="functions">Functions</h2>
 <h3 id="map">map</h3>
-<p>&#x25B8; <strong>map</strong>&lt;<strong>S</strong>, <strong>D</strong>&gt;(<code>mapFn</code>: <a href="./#mapfunction">MapFunction</a>&#x2039;S, D&#x203A;): <em><a href="./#map">Map</a>&#x2039;S, D&#x203A;</em></p>
+<p>&#x25B8; <strong>map</strong>&#x2039;<strong>S</strong>, <strong>D</strong>&#x203A;(<code>mapFn</code>: <a href="./#mapfunction">MapFunction</a>&#x2039;S, D&#x203A;): <em><a href="./#map">Map</a>&#x2039;S, D&#x203A;</em></p>
 <p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/map/index.ts#L30" target="_blank">index.ts:30</a></em></p>
 <p>Function to create transformed stream</p>
 <p><strong>Type parameters:</strong></p>
@@ -437,7 +541,7 @@
 </table>
 <p><strong>Returns:</strong> <em><a href="./#map">Map</a>&#x2039;S, D&#x203A;</em></p>
 <p>map function to transform stream</p>
-<p>&#x25B8; <strong>map</strong>&lt;<strong>S</strong>, <strong>D</strong>&gt;(<code>mapFn</code>: <a href="./#mapfunction">MapFunction</a>&#x2039;S, D&#x203A;, <code>iterable</code>: Iterable&#x2039;S&#x203A;): <em>IterableIterator&#x2039;D&#x203A;</em></p>
+<p>&#x25B8; <strong>map</strong>&#x2039;<strong>S</strong>, <strong>D</strong>&#x203A;(<code>mapFn</code>: <a href="./#mapfunction">MapFunction</a>&#x2039;S, D&#x203A;, <code>iterable</code>: Iterable&#x2039;S&#x203A;): <em>IterableIterator&#x2039;D&#x203A;</em></p>
 <p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/map/index.ts#L38" target="_blank">index.ts:38</a></em></p>
 <p>Function to create transformed stream</p>
 <p><strong>Type parameters:</strong></p>
@@ -501,7 +605,7 @@
                 </a>
                 
                 
-                <a href="../skip/" class="navigation navigation-next " aria-label="Next page: skip">
+                <a href="../reduce/" class="navigation navigation-next " aria-label="Next page: reduce">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -512,7 +616,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"map","level":"1.2.7","depth":2,"next":{"title":"skip","level":"1.2.8","depth":2,"path":"src/streams/skip/README.md","ref":"src/streams/skip/README.md","articles":[]},"previous":{"title":"last","level":"1.2.6","depth":2,"path":"src/streams/last/README.md","ref":"src/streams/last/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing"],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/streams/map/README.md","mtime":"2020-03-22T18:33:28.162Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-22T18:34:04.814Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"map","level":"1.2.9","depth":2,"next":{"title":"reduce","level":"1.2.10","depth":2,"path":"src/streams/reduce/README.md","ref":"src/streams/reduce/README.md","articles":[]},"previous":{"title":"last","level":"1.2.8","depth":2,"path":"src/streams/last/README.md","ref":"src/streams/last/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing"],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/streams/map/README.md","mtime":"2021-05-06T20:42:24.399Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-06T20:43:17.319Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

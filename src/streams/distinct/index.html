@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>take · GitBook</title>
+        <title>distinct · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../takeWhile/" />
+    <link rel="next" href="../distinctUntilChanged/" />
     
     
-    <link rel="prev" href="../some/" />
+    <link rel="prev" href="../create/" />
     
 
     </head>
@@ -131,9 +131,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../distinct/">
+        <li class="chapter active" data-level="1.2.2" data-path="./">
             
-                <a href="../distinct/">
+                <a href="./">
             
                     
                     distinct
@@ -313,9 +313,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.16" data-path="./">
+        <li class="chapter " data-level="1.2.16" data-path="../take/">
             
-                <a href="./">
+                <a href="../take/">
             
                     
                     take
@@ -432,7 +432,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../../.." >take</a>
+        <a href="../../.." >distinct</a>
     </h1>
 </div>
 
@@ -447,46 +447,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="take-module">take module</h2>
-<h3 id="type-aliases">Type aliases</h3>
-<ul>
-<li><a href="./#take">Take</a></li>
-</ul>
+                                <h2 id="distinct-module">distinct module</h2>
 <h3 id="functions">Functions</h3>
 <ul>
-<li><a href="./#take">take</a></li>
+<li><a href="./#distinct">distinct</a></li>
 </ul>
-<h2 id="type-aliases">Type aliases</h2>
-<h3 id="take">Take</h3>
-<p>&#x1AC; <strong>Take</strong>: <em>function</em></p>
-<p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/take/index.ts#L6" target="_blank">index.ts:6</a></em></p>
-<p>Take function (creates slice of a stream)</p>
-<h4 id="type-declaration">Type declaration:</h4>
-<p>&#x25B8; (<code>iterable</code>: Iterable&#x2039;T&#x203A;): <em>IterableIterator&#x2039;T&#x203A;</em></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>iterable</code></td>
-<td>Iterable&#x2039;T&#x203A;</td>
-<td>input stream</td>
-<td></td>
-</tr>
-</tbody>
-</table>
 <h2 id="functions">Functions</h2>
-<h3 id="take">take</h3>
-<p>&#x25B8; <strong>take</strong>&#x2039;<strong>T</strong>&#x203A;(<code>amount</code>: number): <em><a href="./#take">Take</a>&#x2039;T&#x203A;</em></p>
-<p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/take/index.ts#L20" target="_blank">index.ts:20</a></em></p>
-<p>Function to created slice of a stream (substream)
-takes first N items from input stream</p>
+<h3 id="distinct">distinct</h3>
+<p>&#x25B8; <strong>distinct</strong>&#x2039;<strong>T</strong>&#x203A;(<code>iterable</code>: Iterable&#x2039;T&#x203A;): <em>IterableIterator&#x2039;T&#x203A;</em></p>
+<p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/distinct/index.ts#L9" target="_blank">index.ts:9</a></em></p>
+<p>Function to create new stream where items are distinct until changed
+uses strict comparison (===) to compare items</p>
 <p><strong>Type parameters:</strong></p>
 <p>&#x25AA; <strong>T</strong></p>
 <p><strong>Parameters:</strong></p>
@@ -499,38 +470,6 @@ takes first N items from input stream</p>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>amount</code></td>
-<td>number</td>
-<td>number of items to take</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Returns:</strong> <em><a href="./#take">Take</a>&#x2039;T&#x203A;</em></p>
-<p>take function to slice stream</p>
-<p>&#x25B8; <strong>take</strong>&#x2039;<strong>T</strong>&#x203A;(<code>amount</code>: number, <code>iterable</code>: Iterable&#x2039;T&#x203A;): <em>IterableIterator&#x2039;T&#x203A;</em></p>
-<p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/take/index.ts#L29" target="_blank">index.ts:29</a></em></p>
-<p>Function to created slice of a stream (substream)
-takes first N items from input stream</p>
-<p><strong>Type parameters:</strong></p>
-<p>&#x25AA; <strong>T</strong></p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>amount</code></td>
-<td>number</td>
-<td>number of items to take</td>
-<td></td>
-</tr>
 <tr>
 <td><code>iterable</code></td>
 <td>Iterable&#x2039;T&#x203A;</td>
@@ -540,7 +479,7 @@ takes first N items from input stream</p>
 </tbody>
 </table>
 <p><strong>Returns:</strong> <em>IterableIterator&#x2039;T&#x203A;</em></p>
-<p>output sliced stream</p>
+<p>output stream</p>
 
                                 
                                 </section>
@@ -568,12 +507,12 @@ takes first N items from input stream</p>
 
             
                 
-                <a href="../some/" class="navigation navigation-prev " aria-label="Previous page: some">
+                <a href="../create/" class="navigation navigation-prev " aria-label="Previous page: create">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../takeWhile/" class="navigation navigation-next " aria-label="Next page: takeWhile">
+                <a href="../distinctUntilChanged/" class="navigation navigation-next " aria-label="Next page: distinctUntilChanged">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -584,7 +523,7 @@ takes first N items from input stream</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"take","level":"1.2.16","depth":2,"next":{"title":"takeWhile","level":"1.2.17","depth":2,"path":"src/streams/takeWhile/README.md","ref":"src/streams/takeWhile/README.md","articles":[]},"previous":{"title":"some","level":"1.2.15","depth":2,"path":"src/streams/some/README.md","ref":"src/streams/some/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing"],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/streams/take/README.md","mtime":"2021-05-06T20:42:24.399Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-06T20:43:17.319Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"distinct","level":"1.2.2","depth":2,"next":{"title":"distinctUntilChanged","level":"1.2.3","depth":2,"path":"src/streams/distinctUntilChanged/README.md","ref":"src/streams/distinctUntilChanged/README.md","articles":[]},"previous":{"title":"create","level":"1.2.1","depth":2,"path":"src/streams/create/README.md","ref":"src/streams/create/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing"],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/streams/distinct/README.md","mtime":"2021-05-06T20:42:24.399Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-06T20:43:17.319Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>

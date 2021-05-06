@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../distinctUntilChanged/" />
+    <link rel="next" href="../distinct/" />
     
     
     <link rel="prev" href="../" />
@@ -131,7 +131,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../distinctUntilChanged/">
+        <li class="chapter " data-level="1.2.2" data-path="../distinct/">
+            
+                <a href="../distinct/">
+            
+                    
+                    distinct
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../distinctUntilChanged/">
             
                 <a href="../distinctUntilChanged/">
             
@@ -144,7 +157,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="../distinctUntilChangedShallow/">
+        <li class="chapter " data-level="1.2.4" data-path="../distinctUntilChangedShallow/">
             
                 <a href="../distinctUntilChangedShallow/">
             
@@ -157,7 +170,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../distinctUntilChangedStrict/">
+        <li class="chapter " data-level="1.2.5" data-path="../distinctUntilChangedStrict/">
             
                 <a href="../distinctUntilChangedStrict/">
             
@@ -170,7 +183,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="../filter/">
+        <li class="chapter " data-level="1.2.6" data-path="../every/">
+            
+                <a href="../every/">
+            
+                    
+                    every
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../filter/">
             
                 <a href="../filter/">
             
@@ -183,7 +209,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.6" data-path="../last/">
+        <li class="chapter " data-level="1.2.8" data-path="../last/">
             
                 <a href="../last/">
             
@@ -196,7 +222,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.7" data-path="../map/">
+        <li class="chapter " data-level="1.2.9" data-path="../map/">
             
                 <a href="../map/">
             
@@ -209,7 +235,59 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.8" data-path="../skip/">
+        <li class="chapter " data-level="1.2.10" data-path="../reduce/">
+            
+                <a href="../reduce/">
+            
+                    
+                    reduce
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.11" data-path="../reduceWith/">
+            
+                <a href="../reduceWith/">
+            
+                    
+                    reduceWith
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.12" data-path="../scan/">
+            
+                <a href="../scan/">
+            
+                    
+                    scan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.13" data-path="../scanWith/">
+            
+                <a href="../scanWith/">
+            
+                    
+                    scanWith
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.14" data-path="../skip/">
             
                 <a href="../skip/">
             
@@ -222,12 +300,38 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.9" data-path="../take/">
+        <li class="chapter " data-level="1.2.15" data-path="../some/">
+            
+                <a href="../some/">
+            
+                    
+                    some
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.16" data-path="../take/">
             
                 <a href="../take/">
             
                     
                     take
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.17" data-path="../takeWhile/">
+            
+                <a href="../takeWhile/">
+            
+                    
+                    takeWhile
             
                 </a>
             
@@ -405,7 +509,7 @@
 </table>
 <h2 id="functions">Functions</h2>
 <h3 id="create">create</h3>
-<p>&#x25B8; <strong>create</strong>&lt;<strong>T</strong>&gt;(<code>createFn</code>: <a href="./#createfunction">CreateFunction</a>&#x2039;T&#x203A;): <em><a href="./#creator">Creator</a>&#x2039;T&#x203A;</em></p>
+<p>&#x25B8; <strong>create</strong>&#x2039;<strong>T</strong>&#x203A;(<code>createFn</code>: <a href="./#createfunction">CreateFunction</a>&#x2039;T&#x203A;): <em><a href="./#creator">Creator</a>&#x2039;T&#x203A;</em></p>
 <p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/create/index.ts#L29" target="_blank">index.ts:29</a></em></p>
 <p>Function to create sync stream of items</p>
 <p><strong>Type parameters:</strong></p>
@@ -430,7 +534,7 @@
 </table>
 <p><strong>Returns:</strong> <em><a href="./#creator">Creator</a>&#x2039;T&#x203A;</em></p>
 <p>creator function</p>
-<p>&#x25B8; <strong>create</strong>&lt;<strong>T</strong>&gt;(<code>createFn</code>: <a href="./#createfunction">CreateFunction</a>&#x2039;T&#x203A;, <code>amount</code>: number): <em>IterableIterator&#x2039;T&#x203A;</em></p>
+<p>&#x25B8; <strong>create</strong>&#x2039;<strong>T</strong>&#x203A;(<code>createFn</code>: <a href="./#createfunction">CreateFunction</a>&#x2039;T&#x203A;, <code>amount</code>: number): <em>IterableIterator&#x2039;T&#x203A;</em></p>
 <p><em>Defined in <a href="https://github.com/andres-kovalev/pragmatic-streams/blob/master/src/streams/create/index.ts#L37" target="_blank">index.ts:37</a></em></p>
 <p>Function to create sync stream of items</p>
 <p><strong>Type parameters:</strong></p>
@@ -493,7 +597,7 @@
                 </a>
                 
                 
-                <a href="../distinctUntilChanged/" class="navigation navigation-next " aria-label="Next page: distinctUntilChanged">
+                <a href="../distinct/" class="navigation navigation-next " aria-label="Next page: distinct">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -504,7 +608,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"create","level":"1.2.1","depth":2,"next":{"title":"distinctUntilChanged","level":"1.2.2","depth":2,"path":"src/streams/distinctUntilChanged/README.md","ref":"src/streams/distinctUntilChanged/README.md","articles":[]},"previous":{"title":"Streams","level":"1.2","depth":1,"path":"src/streams/README.md","ref":"src/streams/README.md","articles":[{"title":"create","level":"1.2.1","depth":2,"path":"src/streams/create/README.md","ref":"src/streams/create/README.md","articles":[]},{"title":"distinctUntilChanged","level":"1.2.2","depth":2,"path":"src/streams/distinctUntilChanged/README.md","ref":"src/streams/distinctUntilChanged/README.md","articles":[]},{"title":"distinctUntilChangedShallow","level":"1.2.3","depth":2,"path":"src/streams/distinctUntilChangedShallow/README.md","ref":"src/streams/distinctUntilChangedShallow/README.md","articles":[]},{"title":"distinctUntilChangedStrict","level":"1.2.4","depth":2,"path":"src/streams/distinctUntilChangedStrict/README.md","ref":"src/streams/distinctUntilChangedStrict/README.md","articles":[]},{"title":"filter","level":"1.2.5","depth":2,"path":"src/streams/filter/README.md","ref":"src/streams/filter/README.md","articles":[]},{"title":"last","level":"1.2.6","depth":2,"path":"src/streams/last/README.md","ref":"src/streams/last/README.md","articles":[]},{"title":"map","level":"1.2.7","depth":2,"path":"src/streams/map/README.md","ref":"src/streams/map/README.md","articles":[]},{"title":"skip","level":"1.2.8","depth":2,"path":"src/streams/skip/README.md","ref":"src/streams/skip/README.md","articles":[]},{"title":"take","level":"1.2.9","depth":2,"path":"src/streams/take/README.md","ref":"src/streams/take/README.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing"],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/streams/create/README.md","mtime":"2020-03-22T18:33:28.162Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-22T18:34:04.814Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"create","level":"1.2.1","depth":2,"next":{"title":"distinct","level":"1.2.2","depth":2,"path":"src/streams/distinct/README.md","ref":"src/streams/distinct/README.md","articles":[]},"previous":{"title":"Streams","level":"1.2","depth":1,"path":"src/streams/README.md","ref":"src/streams/README.md","articles":[{"title":"create","level":"1.2.1","depth":2,"path":"src/streams/create/README.md","ref":"src/streams/create/README.md","articles":[]},{"title":"distinct","level":"1.2.2","depth":2,"path":"src/streams/distinct/README.md","ref":"src/streams/distinct/README.md","articles":[]},{"title":"distinctUntilChanged","level":"1.2.3","depth":2,"path":"src/streams/distinctUntilChanged/README.md","ref":"src/streams/distinctUntilChanged/README.md","articles":[]},{"title":"distinctUntilChangedShallow","level":"1.2.4","depth":2,"path":"src/streams/distinctUntilChangedShallow/README.md","ref":"src/streams/distinctUntilChangedShallow/README.md","articles":[]},{"title":"distinctUntilChangedStrict","level":"1.2.5","depth":2,"path":"src/streams/distinctUntilChangedStrict/README.md","ref":"src/streams/distinctUntilChangedStrict/README.md","articles":[]},{"title":"every","level":"1.2.6","depth":2,"path":"src/streams/every/README.md","ref":"src/streams/every/README.md","articles":[]},{"title":"filter","level":"1.2.7","depth":2,"path":"src/streams/filter/README.md","ref":"src/streams/filter/README.md","articles":[]},{"title":"last","level":"1.2.8","depth":2,"path":"src/streams/last/README.md","ref":"src/streams/last/README.md","articles":[]},{"title":"map","level":"1.2.9","depth":2,"path":"src/streams/map/README.md","ref":"src/streams/map/README.md","articles":[]},{"title":"reduce","level":"1.2.10","depth":2,"path":"src/streams/reduce/README.md","ref":"src/streams/reduce/README.md","articles":[]},{"title":"reduceWith","level":"1.2.11","depth":2,"path":"src/streams/reduceWith/README.md","ref":"src/streams/reduceWith/README.md","articles":[]},{"title":"scan","level":"1.2.12","depth":2,"path":"src/streams/scan/README.md","ref":"src/streams/scan/README.md","articles":[]},{"title":"scanWith","level":"1.2.13","depth":2,"path":"src/streams/scanWith/README.md","ref":"src/streams/scanWith/README.md","articles":[]},{"title":"skip","level":"1.2.14","depth":2,"path":"src/streams/skip/README.md","ref":"src/streams/skip/README.md","articles":[]},{"title":"some","level":"1.2.15","depth":2,"path":"src/streams/some/README.md","ref":"src/streams/some/README.md","articles":[]},{"title":"take","level":"1.2.16","depth":2,"path":"src/streams/take/README.md","ref":"src/streams/take/README.md","articles":[]},{"title":"takeWhile","level":"1.2.17","depth":2,"path":"src/streams/takeWhile/README.md","ref":"src/streams/takeWhile/README.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["-sharing"],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"src/streams/create/README.md","mtime":"2021-05-06T20:42:24.399Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-05-06T20:43:17.319Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
