@@ -1,6 +1,6 @@
 {
     "name": "pragmatic-streams",
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "Pragmatic operations on iterables",
     "main": "dist/pragmatic-streams.js",
     "module": "dist/pragmatic-streams.esm.js",
